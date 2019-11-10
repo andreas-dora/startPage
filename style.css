@@ -1,0 +1,151 @@
+*{
+    margin: 0px;
+    padding: 0 px;
+    box-sizing: border-box;
+}   
+:root{
+    --ghost:ghostWhite;
+    --lighter:#2c7087
+    ;
+    --secC:silver;
+    --secdddC:#862d59;
+    --backG:#13303a;
+    --abox:#cc0000;
+}
+body{ 
+    font-family: 'Roboto', sans-serif;
+    background-color:var(--backG);
+}
+#headCon{
+
+}
+#headLeft{
+    width: 300px;
+    height: 60px;
+    float: left;
+}
+#headRight{
+    width: auto;
+    height: 60px;
+    text-align: right;
+    float: right;
+}
+h1{
+    font-size: 48px;
+    color: silver;
+}
+u{
+    text-decoration: none;
+    font-weight: 300;
+}
+p{
+    font-size: 22px;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: silver;
+}
+a:active{
+    color: silver;
+}
+a:hover{
+    color: #fff;
+}
+.myRadio{
+    width: 50px;
+    height:40px;
+
+}
+label{
+    width: 50px;
+    height:40px;
+    background-color: var(--backG);
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: silver;
+}
+#page{
+    width:90%;
+    margin: 20px auto 0 auto;
+}
+#allC{
+    width: 100%;
+    display: flex;
+}
+.column{
+    background-color: val(--backG);
+    width: 210px;
+    height: 550px;
+    border: 2px solid red;
+    border-radius: 5px;
+    float: left;
+    flex: 1;
+}
+
+
+button{
+    height: 60px;
+    width: 200px;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: silver;
+    margin: 0 auto 20 auto 20, ;
+    border: 2px solid silver;
+    border-radius: 10px;
+    background-color: var(--backG);
+    -webkit-box-shadow: 0 6px 16px -6px black;
+}
+.aContainer{
+    height: 60px;
+    width: 200px;
+    font-size: 32px;
+    font-weight: 100;
+    text-align: center;
+    text-transform: uppercase;
+    color: silver;
+    margin:  5px auto;
+    border-radius: 10px;
+    background-color: var(--backG);
+    -webkit-box-shadow: 0 6px 16px -6px black;
+}
+
+.headContainer{
+    height: 20px;
+    width: 200px;
+    font-weight: 100;
+    text-align: center;
+    text-transform: uppercase;
+    color: silver;
+    margin:  5px auto;
+    border-radius: 10px;
+    background-color: var(--backG);
+}
+
+.linkContainer{
+    height: 60px;
+    width: 200px;
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    color: silver;
+    margin:  5px auto;
+    border-radius: 10px;
+    background-color: var(--backG);
+    -webkit-box-shadow: 0 6px 16px -6px black;
+}
+
+button:focus, button:hover{
+    color: #fff;
+    border: 2px solid var(--lighter);
+}
+footer{
+    font-size: 18px;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    color: var(--ghost);
+}
