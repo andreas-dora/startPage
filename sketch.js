@@ -1,4 +1,3 @@
-
 function tellTime() {
     let now = new Date();
     let myH = now.getHours().toString().padStart(2, 0);
@@ -15,8 +14,11 @@ function tellTime() {
     const monate = ["Januar", "Februar", "März", "April", "Mai", "Juni", "August", "September", "Oktober", "November", "Dezember"];
 
     let myTime = myH + ":" + myM; // ":" + myS;
-    let myDatum = tage[myDay] + " " + myDate + ". " + monate[myMonth] + " " + myY;
+    let myDatum = myDate + "." + myMonth +".";
+   //let myDatum = tage[myDay] + " " + myDate + ". " + monate[myMonth] + " " + myY;
 
+    
+    document.getElementById("tag").innerText = tage[myDay];
     document.getElementById("zeit").innerText = myTime;
     document.getElementById("datum").innerText = myDatum;
 };

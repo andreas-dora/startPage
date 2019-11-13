@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,500|Roboto:400,400i,500i,700,700i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./myStyle.css">
+    <title>RechenHilfe</title>
+</head>
+    <body>
+        <div class="page" id="rPage">
+
+
+
+                <div class="column">
+
+                        <div id="rMainContainer">
+                            <form action="get">
+                                    <div class="rCon" id="displayContainer">
+                                        <p><div id=summe></div></p>
+                                        </div>
+
+                                    <div class="rCon" id="r100Con">      
+                                        <span class="rLeft">€100&times;</span>
+                                        <input type="number" class="rInput" id="rInE100" oninput="myFunction()" placeholder=" € 100;-">
+                                        <span class="rRight" id="rZwischenE100"></span>
+                                    </div>                                    
+                                    <div class="rCon" id="r50Con">                                           
+                                        <span class="rLeft">€50&times;</span>
+                                        <input type="number" class="rInput" id="rInE50" oninput="myFunction()">
+                                        <span class="rRight" id="rZwischenE50"></span>
+                                    </div>
+                                    <div class="rCon" id="r20Con">                                           
+                                        <span class="rLeft">€20&times;</span>
+                                        <input type="number" class="rInput" id="rInE20" oninput="myFunction()">
+                                        <span class="rRight" id="rZwischenE20"></span>    
+                                        </div>
+                                    <div class="rCon" id="r10Con">                                           
+                                        <span class="rLeft">€10&times;</span>
+                                        <input type="number" class="rInput" id="rInE10" oninput="myFunction()">
+                                        <span class="rRight" id="rZwischenE10"></span>
+                                    </div>                                    
+                                    <div class="rCon" id="r5Con">                                           
+                                        <span class="rLeft">€5&times;</span>
+                                        <input type="number" class="rInput" id="rInE5" oninput="myFunction()">
+                                        <span class="rRight" id="rZwischenE5"></span>
+                                    </div>
+                                    <div class="rCon" id="rRollenCon">                                           
+                                                <span class="rLeft">Rollen</span>
+                                                <input type="number" class="rInput" id="rInRollen" oninput="myFunction()">
+                                                <span class="rRight" id="rZwischenRollen"></span>
+                                        </div>       
+
+                                        <div class="rCon" id="rCoinsCon">                                           
+                                                <span class="rLeft">Münzen</span>
+                                                <input type="number" class="rInput" id="rInCoins" oninput="myFunction()">
+                                                <span class="rRight" id="rZwischenCoins"></span>
+                                            </div>        
+                                <input type="reset" name="resetButton" id="rButton" value="C">
+                            </form>
+                                                       
+
+                        </div>
+
+
+                    </div>
+                    
+
+
+ 
+                      
+
+
+                
+
+
+
+
+
+
+
+                    </div>
+            
+        </div>
+        
+
+        <script type="text/javascript" src="rechen.js"></script>
+
+
+    </body>
+</html>    

@@ -5,80 +5,75 @@
 }   
 :root{
     --ghost:ghostWhite;
-    --backG: #19404d;
+    --backG:#2c7087;
     --secC:silver;
     --secdddC:#862d59;
-    --darker: #19404d;
+    --darker: #33334d;
     --abox:#cc0000;
+    --myOrange: rgb(255, 100,10);
 }
 body{ 
+    font-family: 'Roboto Mono', monospace;
     font-family: 'Roboto', sans-serif;
     background-color:var(--backG);
 
 }
+span{
+    font-size: 14px;
 
-
+}
 
 #headLeft{
-    width: 600px;
+    width: 300px;
     height: 60px;
     float: left;
-    margin:20px;
 }
 #headRight{
     width: auto;
     height: 60px;
     text-align: right;
     float: right;
-    margin:20px;
-
 }
 h1{
     font-size: 48px;
     color: silver;
 }
-u{
-    text-decoration: none;
-    font-weight: 300;
-}
+
 p{
     font-size: 18px;
     color: ghostwhite;
 }
-a{
-    text-decoration: none;
-    color: silver;
-}
-a:active{
-    color: silver;
-}
-a:hover{
-    color: #fff;
-}
 
-label{
-    width: 40px;
-    height:30px;
-    background-color: dimgray;
-    font-size: 16px;
-    font-weight: 400;
-    color: ghostwhite;
-    border: 1px solid silver;
-}
+
+
 .rInput{
     width: 60px;
     height: 30px;
     font-size: 16px;
-
+    float: left;
     border-radius: 3px;
 }
-.rZ{
+.rLeft{
+    width: 65px;
+    height: 30px;
+    font-size: 16px;
+    float: left;
+    text-align: center;
+    padding-top: 5px;
+    border-radius: 3px;
+    background: var(--darker);
+}
+.rRight{
     width: 70px;
     height: 30px;
     font-size: 16px;
-
+    text-align: right;
+    float: right;
+    padding: 5px 5px 5px 0;
     border-radius: 3px;
+    color: ghostwhite;
     background: var(--darker);
+    overflow: hidden;
 }
 #page{
     width:90%;
@@ -92,7 +87,7 @@ label{
     background-color: var(--backG);
     width: 210px;
     height: 550px;
-  /*  border: 2px solid red; */
+    border: 2px solid red;
     border-radius: 5px;
     float: left;
     flex: 1;
@@ -138,44 +133,46 @@ button{
     background-color: var(--backG);
 }
 
-.linkContainer{
-    height: 60px;
-    width: 200px;
-    font-size: 32px;
-    font-weight: 400;
-    text-align: center;
-    text-transform: uppercase;
-    color: silver;
-    margin:  5px auto;
-    border-radius: 10px;
-    background-color: var(--backG);
-    -webkit-box-shadow: 0 6px 16px -6px black;
-}
+
 #rMainContainer{
-    height: 380px;
+    height: 410px;
     width: 200px;
     font-size: 32px;
     font-weight: 400;
     text-align: center;
-    text-transform: uppercase;
+  /*  text-transform: uppercase; */
     color: silver;
     margin:  5px auto;
     border-radius: 10px;
-    background-color: dimgray;
+    background-color: var(--darker);
     -webkit-box-shadow: 0 6px 16px -6px black;
 }
 .rCon{
-    height: 35px;
-    background: darkslategray;
-    border: 1px solid silver;
+    height: 37px;
+    margin-top: 2px;
+    background: var(--darker);
 }
 #displayContainer{
     height: 55px;
     background: #000000;
 }
+#rButton{
+    width: 35px;
+    height: 35px;
+    background: var(--darker);
+    font-size: 18px;
+    color: silver;
+    border: 3px solid silver;
+    border-radius: 100px;
+}
+
 button:focus, button:hover{
     color: #fff;
     border: 2px solid var(--lighter);
+}
+#rButton:focus, #rButton:hover{
+    color: var(--myOrange);
+    border: 2px solid var(--myOrange);
 }
 footer{
     font-size: 18px;
