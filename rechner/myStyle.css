@@ -96,7 +96,7 @@ p{
 
 button{
     height: 60px;
-    width: 21500px;
+    width: 200px;
     font-size: 18px;
     font-weight: 400;
     text-transform: uppercase;
@@ -147,7 +147,7 @@ button{
     background-color: var(--darker);
     -webkit-box-shadow: 0 6px 16px -6px black;
 }
-.rCon{
+/* .rCon{
     height: 37px;
     margin-top: 2px;
     background: var(--darker);
@@ -164,7 +164,7 @@ button{
     color: silver;
     border: 3px solid silver;
     border-radius: 100px;
-}
+} */
 
 button:focus, button:hover{
     color: #fff;

@@ -65,21 +65,21 @@ label{
     color: ghostwhite;
     border: 1px solid silver;
 }
-.rInput{
+/* .rInput{
     width: 60px;
     height: 30px;
     font-size: 12px;
 
     border-radius: 3px;
-}
-.rZ{
+} */
+/* .rZ{
     width: 70px;
     height: 30px;
     font-size: 16px;
 
     border-radius: 3px;
     background: var(--darker);
-}
+} */
 #page{
     width:90%;
     margin: 20px auto 0 auto;
@@ -139,14 +139,14 @@ button{
 }
 
 .linkContainer{
-    height: 40px;
+    height: 30px;
     width: 150px;
     margin:  0 auto 10px auto;
     border-radius: 10px;
     background-color: var(--backG);
     -webkit-box-shadow: 0 6px 16px -6px black;
 }
-#rMainContainer{
+/* #rMainContainer{
     height: 380px;
     width: 120px;
     font-size: 32px;
@@ -158,12 +158,12 @@ button{
     border-radius: 10px;
     background-color: dimgray;
     -webkit-box-shadow: 0 6px 16px -6px black;
-}
-.rCon{
+} */
+/* .rCon{
     height: 35px;
     background: darkslategray;
     border: 1px solid silver;
-}
+} */
 /* #displayContainer{
     height: 55px;
     background: #000000;
