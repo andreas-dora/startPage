@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+#page{
+    max-width: 1300px;
+    background: cornsilk;
+    display: flex;
+}
+#mainContainer{
+    width: 90%;
+    margin: 10px auto 0 auto;
+    background-color: darkviolet;
+    display: flex;
+}
+header{
+    width: 100%;
+    height: 80px;
+    background-color: greenyellow;
+    display: flex;
+}
+#headerLeft{
+    order: 1;
+    height: 100%;
+    background-color: indigo;
+    float: left;
+    flex: 2 1 600px;
+
+}
+#headerRight{
+    order: 2;
+    height: 100%;
+    background-color: orchid;
+    float: right;
+    /* flex: 1 1 400px; */
+
+}
+footer{
+    order: 5;
+    width: 100%;
+    height: 50px;
+}

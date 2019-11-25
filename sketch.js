@@ -1,4 +1,4 @@
-function tellTime() {
+sfunction tellTime() {
     let now = new Date();
     let myH = now.getHours().toString().padStart(2, 0);
     let myM = now.getMinutes().toString().padStart(2, 0);
