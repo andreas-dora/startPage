@@ -3,20 +3,27 @@
     padding: 0 px;
     box-sizing: border-box;
 }   
+
 :root{
     --ghost:ghostWhite;
     --backG: #19404d;
     --secC:silver;
     --secdddC:#862d59;
     --darker: #19404d;
-    --abox:#cc0000;
 }
 body{ 
     font-family: 'Roboto', sans-serif;
     background-color:var(--backG);
+    max-width: 1000px;
+    margin: 10px auto;
 
 }
 
+header{
+    width: 100%;
+    height: auto;
+    background-color: darkmagenta;
+}
 
 
 #headLeft{
@@ -30,8 +37,7 @@ body{
     height: 60px;
     text-align: right;
     float: right;
-    margin:20px;
-
+    margin:10px;
 }
 h1{
     font-size: 48px;
@@ -40,6 +46,13 @@ h1{
 u{
     text-decoration: none;
     font-weight: 300;
+}
+main{
+    width: 100%;
+    height: auto;
+    /* background-color: darkslateblue; */
+    display: flex;
+    justify-content: space-between;
 }
 p{
     font-size: 14px;
@@ -56,7 +69,7 @@ a:hover{
     color: #fff;
 }
 
-label{
+/* label{
     width: 40px;
     height:30px;
     background-color: dimgray;
@@ -64,7 +77,7 @@ label{
     font-weight: 400;
     color: ghostwhite;
     border: 1px solid silver;
-}
+} */
 /* .rInput{
     width: 60px;
     height: 30px;
@@ -80,19 +93,22 @@ label{
     border-radius: 3px;
     background: var(--darker);
 } */
-#page{
+/* #page{
     width:90%;
     margin: 20px auto 0 auto;
-}
-#allC{
+} */
+/* #allC{
     width: 100%;
     display: flex;
-}
+    justify-content: space-between;
+} */
 .column{
-    background-color: var(--backG);
+    /* background-color: darkmagenta; */
+    /* background-color: var(--backG); */
     width: 170px;
     height: 550px;
   /*  border: 2px solid red; */
+    padding: 0 20px;
     border-radius: 5px;
     float: left;
     flex: 1;
@@ -110,6 +126,8 @@ button{
     border: 2px solid silver;
     border-radius: 10px;
     background-color: var(--backG);
+    outline: none;
+
     -webkit-box-shadow: 0 6px 16px -6px black;
 }
 /* .aContainer{
@@ -140,7 +158,7 @@ button{
 
 .linkContainer{
     height: 30px;
-    width: 150px;
+    width: 90%;
     margin:  0 auto 10px auto;
     border-radius: 10px;
     background-color: var(--backG);

@@ -10,7 +10,7 @@
 </head>
     <body>
         <div class="page" id="sPage">
-                <header>
+        <header>
                     <div id="headCon">
                             <div id="headLeft">
                                     <h1><span id="tag"></span> <u><span id="datum"></span></u></h1>
@@ -20,9 +20,10 @@
                                     </div>
                     </div>
 
-                    </header>
-                    <div id="allC">
-                        <div class="column">
+        </header>
+        <main>
+                <!-- <div id="allC"> -->
+                <div class="column">
                                 <div class="headContainer"><h5>Meine Seiten</h5></div>
                                 <div class="linkContainer">
                                         <a href="https://drive.google.com/drive/u/0/my-drive" target="_blank">
@@ -48,12 +49,18 @@
                                 </div>
 
                             </div>
-                        <div class="column">
+                <div class="column">
+                        <div class="headContainer"><h5>Volumio</h5></div>
+                        <div class="linkContainer">
+                                <a href="http://volumio.local/playback" target="_blank"><button>Vimeo</button></a>
+                                </div>
+                                <a href="http://volumio.local/api/v1/commands/?cmd=volume&volume=50" target="_blank"><button>50%</button></a>
+                            </div>
+
+
                             <div class="headContainer"><h5>Coding Train</h5></div>
 
-                               <div class="linkContainer">
-                                   <a href="https://processing.org/reference/" target="_blank"><button>Processing</button></a>
-                               </div>
+
                                <div class="linkContainer">
                                     <a href="https://p5js.org/reference/" target="_blank"><button>P5.js</button></a>
                                 </div>
@@ -65,17 +72,7 @@
                                         <a href="https://thecodingtrain.com/" target="_blank"><button>on Github</button></a>
                                 </div> 
                                 
-                <div class="headContainer"><h5>Web Dev</h5></div>
-                <div class="linkContainer">
-                <a href="https://developer.mozilla.org/en-US/"><button>MDN</button></a>
-                        
-                </div>
-                        <div class="linkContainer">
-                        <a href="https://fonts.google.com/" target="_blank"><button>Google Fonts</button></a>
-                                    </div>
-                                    <div class="linkContainer">
-                                                <a href="https://www.w3schools.com/colors/colors_picker.asp" target="_blank"><button>Color</button></a>
-                                </div>
+
                         </div>
 
 
@@ -103,7 +100,7 @@
                         <a href="https://css-tricks.com/" target="_blank"><button>CSS Tricks</button></a>
                        </div>
                         </div>
-                        <div class="column">
+                <div class="column">
 
                                     <div class="headContainer"><h5>Atelier Obskur</h5></div>
 
@@ -132,20 +129,16 @@
 
                         </div>
 
-
-
-
-
-
-
-                    </div>
+        <!-- </div> -->
             
-        </div>
+        <!--  -->
+        </main>
+
         <footer>
                 <h5><u>&copy; Andreas Breitwieser 2019 |</u> <a href="#">Impressum</a></h5>
             </footer>       
-
-        <script type="text/javascript" src="sketch.js"></script>
+        </div>
+        <script type="text/javascript" src="./sketch.js"></script>
 
 
     </body>
