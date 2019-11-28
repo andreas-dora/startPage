@@ -23,7 +23,7 @@
         </header>
         <main>
                 <!-- <div id="allC"> -->
-                <div class="column" id="col1">
+                <div class="column">
                                 <div class="headContainer"><h5>Meine Seiten</h5></div>
                                 <div class="linkContainer">
                                         <a href="https://drive.google.com/drive/u/0/my-drive" target="_blank">
@@ -49,9 +49,15 @@
                                 </div>
 
                             </div>
-                <div class="column" id="col2">
-                        <div class="headContainer"><h5>Volumio</h5></div>
-                        <div class="linkContainer">
+                <div class="column">
+                  <div class="headContainer"><h5>Volumio</h5></div>
+                    <div class="vContainer">
+                      <button class="volumio" id="volumioT">START/STOP</button>
+                      <button class="volumio" id="mute">Mute</button>
+
+                                </div>
+
+                                <div class="linkContainer">
                                 <a href="http://volumio.local/playback" target="_blank"><button>Vimeo</button></a>
                                 </div>
                                 
@@ -79,7 +85,7 @@
                         </div>
 
 
-                <div class="column" id="col3">
+                <div class="column">
                         <div class="headContainer"><h5>Web Dev</h5></div>
 
                         <div class="linkContainer">
@@ -102,18 +108,8 @@
                 <div class="linkContainer">
                         <a href="https://css-tricks.com/" target="_blank"><button>CSS Tricks</button></a>
                        </div>
-                        
-                       <div class="linkContainer">
-                        <a href="http://expressjs.com/de/" target="_blank"><button>Express</button></a>
-                       </div>
-                        
-                        <div class="https://socket.io/" target="_blank"><button>Socket.io</button></a>
-                               </div>
-                                </div>
-
-
-
-                <div class="column" id="col4">
+                        </div>
+                <div class="column">
 
                                     <div class="headContainer"><h5>Atelier Obskur</h5></div>
 
@@ -150,8 +146,8 @@
             </footer>       
         </div>
         <script type="text/javascript" src="./sketch.js"></script>
-        <!-- <script type="text/javascript" src="socket.io-client/dist/socket.io.js"></script>
- -->
+        <script type="text/javascript" src="socket.io-client/dist/socket.io.js"></script>
+
 
     </body>
 </html>    
