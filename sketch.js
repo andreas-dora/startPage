@@ -1,32 +1,3 @@
-var socket;
-
-
-var test = document.addEventListener("DOMContentLoaded", testFun);
-var testButton = document.getElementById("volumioT");
-testButton.addEventListener("click", sendTo);
-
-function testFun(){
-    socket = io.connect('http://volumio.local/');
-    socket.on('connect', function(data){
-        console.log(data);
-        
-    });
-
-    // window.alert("HEYHO");
-}
-
-function sendTo(){
-  //  socket.emit('mute', '');
-    socket.emit('getState', '');
-//    socket.on('getState', incoming);
-    alert("HEllo, I love you, want you tell me your name");
-
-}
-
-// function incoming(data){
-//     console.log(data);
-// }
-
 
 function tellTime() {
     let now = new Date();
@@ -51,6 +22,6 @@ function tellTime() {
     document.getElementById("tag").innerText = tage[myDay];
     document.getElementById("zeit").innerText = myTime;
     document.getElementById("datum").innerText = myDatum;
-};
+w};
 
 setInterval(tellTime, 1000);

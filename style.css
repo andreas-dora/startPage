@@ -8,37 +8,38 @@
     --ghost:ghostWhite;
     --backG: #19404d;
     --secC:silver;
-    --secdddC:#862d59;
     --darker: #19404d;
 }
 body{ 
     font-family: 'Roboto', sans-serif;
     background-color:var(--backG);
     max-width: 1000px;
-    margin: 10px auto;
+    margin: 0 auto 10px auto;
 
 }
 
 header{
     width: 100%;
-    height: auto;
+    height: 90px;
     background-color: darkmagenta;
 }
 
 
-#headLeft{
+/* #headLeft{
     width: 600px;
     height: 60px;
+    background: palegreen;
     float: left;
-    margin:20px;
 }
 #headRight{
-    width: auto;
-    height: 60px;
+    width: 300px;
+  /* //  width: auto; */
+    /* height: 60px;
+    background: plum;
     text-align: right;
     float: right;
-    margin:10px;
-}
+    /* margin:10px; 
+} */ 
 h1{
     font-size: 48px;
     color: silver;
@@ -69,51 +70,16 @@ a:hover{
     color: #fff;
 }
 
-/* label{
-    width: 40px;
-    height:30px;
-    background-color: dimgray;
-    font-size: 16px;
-    font-weight: 400;
-    color: ghostwhite;
-    border: 1px solid silver;
-} */
-/* .rInput{
-    width: 60px;
-    height: 30px;
-    font-size: 12px;
 
-    border-radius: 3px;
-} */
-/* .rZ{
-    width: 70px;
-    height: 30px;
-    font-size: 16px;
-
-    border-radius: 3px;
-    background: var(--darker);
-} */
-/* #page{
-    width:90%;
-    margin: 20px auto 0 auto;
-} */
-/* #allC{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-} */
 .column{
-    /* background-color: darkmagenta; */
-    /* background-color: var(--backG); */
-    width: 170px;
+    width: 90px;
     height: 550px;
-  /*  border: 2px solid red; */
+    /* background-color: coral; */
     padding: 0 20px;
     border-radius: 5px;
     float: left;
     flex: 1;
 }
-
 
 button{
     width: 100%;
@@ -127,6 +93,7 @@ button{
     border-radius: 10px;
     background-color: var(--backG);
     outline: none;
+    box-shadow: 0 6px 16px -6px black;
     -webkit-box-shadow: 0 6px 16px -6px black;
 }
 .volumio{
@@ -162,7 +129,7 @@ button{
 
 .headContainer{
     height: 20px;
-    width: 150px;
+    width: 100%;
     font-weight: 100;
     text-align: center;
     text-transform: uppercase;
@@ -174,20 +141,40 @@ button{
 
 .linkContainer{
     height: 30px;
-    width: 90%;
+    width: 100%;
     margin:  0 auto 10px auto;
     border-radius: 10px;
     background-color: var(--backG);
+    box-shadow: 0 6px 16px -6px black;
     -webkit-box-shadow: 0 6px 16px -6px black;
 }
-.vContainer{
+.bigContainer{
+    height: 90px;
+    width: 100%;
+    color: silver; */
+    text-align: center; 
+    margin:  0 auto 10px auto;
+    border-radius: 10px;
+    background-color: var(--backG);
+    box-shadow: 0 6px 16px -6px black;
+    -webkit-box-shadow: 0 6px 16px -6px black; */
+}
+span{
+    font-size: 24px;
+    font-weight: 100;
+    text-align: center;
+    text-transform: uppercase;
+    color: ghostwhite;
+}
+/* .vContainer{
     width: 90%;
     height: auto;
     margin:  0 auto 10px auto;
     border-radius: 10px;
     background-color: var(--backG);
+    box-shadow: 0 6px 16px -6px black;
     -webkit-box-shadow: 0 6px 16px -6px black;
-}
+} */
 /* #rMainContainer{
     height: 380px;
     width: 120px;
@@ -212,7 +199,7 @@ button{
 } */
 button:focus, button:hover{
     color: #fff;
-    border: 2px solid var(--lighter);
+    border: 2px solid var(--backG);
 }
 footer{
     font-size: 18px;
