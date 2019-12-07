@@ -9,6 +9,7 @@
   <title>Document</title>
 </head>
 <body>
+  <main>
     <div class="column" id="col1">
         <div class="hCon"><h5>Meine Seiten</h5></div>
         <div class="linkContainer">
@@ -33,16 +34,26 @@
                 <div class="linkContainer">
                 <a href="https://www.kernelhost.de/" target="_blank"><button button class="myB">Kernelhost</button></a>
                 </div>
-                <div class="hCon"><h5>Meine Seiten</h5></div>
+                <div class="hCon"><h5>divers</h5></div>
                 <div class="linkContainer">
                         <a href="https://www.youtube.com/" target="_blank">
                         <button class="myB">Youtube</button></a>
                       </div>
     </div>
-  <div class="column">
+    <div class="column" id="col2">
+        <div class="hCon"><h5>HOME</h5></div>
     <div class="accordCon">
-        <button class="accordion">Volumio</button>
+        <button class="accordion" id="volumio">Volumio</button>
         <div class="panel">
+            <div class="row">
+              <figure id="cover"></figure>
+              </div>
+            <div class="row">
+                <div class="output" id="artist"></div>
+              </div>
+            <!-- <div class="row">
+                <div class="output" id="titel"></div>
+              </div> -->
             <div class="row">
                 <button class="half" id="minus">-</button>
                 <button class="half" id="plus">+</button>
@@ -59,7 +70,7 @@
             </div>
 
               <div class="row">
-                  <button class="half" id="getState">get State</button>
+                  <button class="half" id="getState">Status</button>
                   <button class="half" id="off">off</button>
                 </div>   
         </div>
@@ -96,10 +107,98 @@
         </div>
     </div>
 
-    <div id="output">TEST</div>
+   
 
 
+        
+
+        <div class="hCon"><h5>Coding Train</h5></div>
+        <div class="linkContainer">
+            <a href="https://processing.org/reference/" target="_blank"><button class="myB">Processing</button></a>
         </div>
+
+
+   <div class="linkContainer">
+        <a href="https://p5js.org/reference/" target="_blank"><button class="myB">P5.js</button></a>
+    </div>
+
+    <div class="linkContainer">
+            <a href="https://www.youtube.com/user/shiffman" target="_blank"><button class="myB">on Youtube</button></a>
+    </div>                               
+    <div class="linkContainer">
+            <a href="https://thecodingtrain.com/" target="_blank"><button class="myB">on Github</button></a>
+    </div> 
+    
+
+</div>
+<div class="column" id="col3">
+    <div class="hCon"><h5>Web Dev</h5></div>
+
+    <div class="linkContainer">
+            <a href="https://www.w3schools.com/howto/default.asp" target="_blank"><button class="myB">W3 how to</button></a>
+    </div>
+
+    <div class="linkContainer">
+    <a href="https://fonts.google.com/" target="_blank"><button class="myB">Google Fonts</button class="myB"></a>
+        </div>
+    <div class="linkContainer">
+            <a href="https://www.w3schools.com/colors/colors_picker.asp" target="_blank"><button class="myB">Color</button></a>
+    </div>
+    <div class="linkContainer">
+    <a href="https://developer.mozilla.org/de/#" target="_blank"><button class="myB">MDN de</button></a>
+</div>
+
+    <div class="linkContainer">
+            <a href="https://www.mozilla.org/de/firefox/developer/?utm_campaign=css_grid_learn_more_2&utm_medium=referral&utm_source=developer.mozilla.org" target="_blank"><button class="myB">Firefox Dev</button></a>
+</div>
+<div class="linkContainer">
+    <a href="https://css-tricks.com/" target="_blank"><button class="myB">CSS Tricks</button></a>
+   </div>
+    
+   <div class="linkContainer">
+    <a href="http://expressjs.com/de/" target="_blank"><button class="myB">Express</button></a>
+   </div>
+
+<div class="linkContainer">
+    <a href="https://socket.io/" target="_blank"><button class="myB">Socket.io</button></a>
+    </div>
+</div>
+<div class="column" id="col4">
+    <div class="timeContainer">
+            <!-- <h1><div id="zeit"></div></h1>     -->
+            <div id="zeit"></div>
+            <div id="datum"></div>
+    </div>
+    <div class="hCon"><h5>Atelier Obskur</h5></div>
+
+    <div class="linkContainer">
+            <a href="https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=13&ct=1573563163&rver=7.1.6819.0&wp=MBI_SSL_SHARED&lc=1031&id=250206&cbcxt=sky&ru=https%3A%2F%2Fonedrive%2Elive%2Ecom%2F%3Fid%3D55EEA57ECDE5CC7C%252112163%26cid%3D55EEA57ECDE5CC7C&wreply=https%3A%2F%2Fonedrive%2Elive%2Ecom%2F%3Fid%3D55EEA57ECDE5CC7C%252112163%26cid%3D55EEA57ECDE5CC7C" target="_blank"><button class="myB">OneDrive</button></a>
+                </div>
+            <div class="linkContainer">
+                    <a href="https://drive.google.com/drive/u/0/folders/1PMIPcCaUVW7o3H_qeyGWV2Vfhk5W577l" target="_blank"><button class="myB">Drive</button></a>
+                </div>
+                <div class="linkContainer">
+                        <a href="https://communicator.strato.de/appsuite/ui#!!&app=io.ox/mail&folder=default0/INBOX" target="_blank"><button class="myB">WebMail</button></a>
+                </div>    
+                <div class="linkContainer">
+                        <a href="https://banking.sparda.de/spm/?institut=5009" target="_blank"><button class="myB">Accounting</button></a>
+                </div>
+                <div class="linkContainer">
+                        <a href="https://www.wunderlist.com/webapp#/lists/inbox" target="_blank"><button class="myB">Wunderlist</button></a>
+                </div>  
+                <div class="linkContainer">
+                    <a href="https://onedrive.live.com/view.aspx?resid=55EEA57ECDE5CC7C!15697&ithint=file%2cxlsx&authkey=!AktoUEhpTyjk9kM" target="_blank"><button class="myB">Dienstplan</button></a>
+            </div>  
+                <div class="linkContainer">
+                        <a href="https://andreas-dora.github.io/rechenhilfe/" target="_blank"><button class="myB">Rechenhilfe</button></a>
+                </div>                           
+
+
+    </div>
+
+
+</main>
+
         <script type="text/javascript" src="./accordion.js"></script>
 </body>
 </html>

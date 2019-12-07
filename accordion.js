@@ -1,4 +1,6 @@
 var socket = io.connect('http://volumio.local/');
+
+var volu  = document.getElementById('volumio');
 var plus  = document.getElementById('plus');
 var min  = document.getElementById('minus');
 var unmu  = document.getElementById('unmute');
@@ -6,9 +8,14 @@ var mu  = document.getElementById('mute');
 var aB1  = document.getElementById('aBtn1');
 var aIn1  = document.getElementById('aIn1');
 var gState  = document.getElementById('getState');
-var out = document.getElementById('output');
+var off = document.getElementById("off");
+
 var alSt = document.getElementById('alarmState');
- 
+
+var outA = document.getElementById('artist');
+// var outT = document.getElementById('titel');
+
+
 
 plus.addEventListener('click', function(){
   socket.emit('volume', '+');
@@ -26,10 +33,8 @@ mu.addEventListener('click', function(){
   socket.emit('mute', '');
   console.log(socket.emit);
 });
-gState.addEventListener('click', function(){
+volu.addEventListener('click', function(){
   socket.emit('getState', '');
-
-window.alert("VEnga");
 });
 aBtn1.addEventListener('click', function(){
   let data = {
@@ -52,7 +57,8 @@ aBtn1.addEventListener('click', function(){
 });
 
 socket.on('pushState', function(data){
-  output.innerHTML += 'pushState' + " " + data.status + " Titel: " + data.title + " uri: " + data.uri;
+  outA.innerHTML = '<strong>' + data.artist +'</strong>' +": "   + data.title + " [" + data.album +"]";
+  // outT.innerHTML = ":" + data.title;
 });
 
 
@@ -69,6 +75,9 @@ socket.on('pushAlarm', function(data){
   }
 });
 
+off.addEventListener('click', function(){
+  socket.emit('shutdown', '');
+});
 
 var accord = document.getElementsByClassName("accordion");
 var i;

@@ -38,3 +38,4 @@ let data = {
 "time":"10:04",
 "playlist":"sunrise"
 }
+das für volumio wieder einsetzen: `<div id="output">TEST</div>`

@@ -60,7 +60,14 @@ button{
   cursor: pointer;
   border-radius: 10px;
 }
-
+.output{
+  width: 100%;
+  min-height: 50px;
+  background-color: var(--darker);
+  font-size: 12px;
+  font-weight: 100;
+  
+}
 .accordion{border-style: none; border-radius: 10px;}
 .myB:hover,.accordion:hover{color: var(--w);}
 
