@@ -5,7 +5,10 @@ var unmu  = document.getElementById('unmute');
 var mu  = document.getElementById('mute');
 var aB1  = document.getElementById('aBtn1');
 var aIn1  = document.getElementById('aIn1');
-var off  = document.getElementById('off');
+var gState  = document.getElementById('getState');
+var out = document.getElementById('output');
+var alSt = document.getElementById('alarmState');
+ 
 
 plus.addEventListener('click', function(){
   socket.emit('volume', '+');
@@ -23,10 +26,10 @@ mu.addEventListener('click', function(){
   socket.emit('mute', '');
   console.log(socket.emit);
 });
-off.addEventListener('click', function(){
-  io.emit('playPlaylist', {"name":"sunrise"});
+gState.addEventListener('click', function(){
+  socket.emit('getState', '');
 
-//window.alert("VEnga");
+window.alert("VEnga");
 });
 aBtn1.addEventListener('click', function(){
   let data = {
@@ -47,6 +50,25 @@ aBtn1.addEventListener('click', function(){
   // }
 
 });
+
+socket.on('pushState', function(data){
+  output.innerHTML += 'pushState' + " " + data.status + " Titel: " + data.title + " uri: " + data.uri;
+});
+
+
+alSt.addEventListener('click', function(){
+
+  socket.emit('getAlarms', '');
+  window.alert("WANN MANN?");
+});
+socket.on('pushAlarm', function(data){
+  console.log(data);
+  output.innerHTML += 'pushAlarm' + " " + data.length; 
+  for(let i= 0; i< data.length; i++){
+    output.innerHTML += "ALARM " + i + " " +  data[i].time;
+  }
+});
+
 
 var accord = document.getElementsByClassName("accordion");
 var i;
