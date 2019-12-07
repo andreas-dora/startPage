@@ -149,12 +149,7 @@ span{
     font-weight: 100;
     line-height: 66px;
 }
-#datum{
-    font-size: 12px;
-
-    font-weight: 400;
-    text-transform: uppercase;
-} 
+#datum{font-size: 12px; font-weight: 400;text-transform: uppercase;} 
 
 button:focus, button:hover{
     color: #fff;
