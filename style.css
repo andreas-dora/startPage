@@ -18,32 +18,8 @@ body{
 
 }
 
-header{
-    width: 100%;
-    height: 90px;
-    background-color: darkmagenta;
-}
 
 
-/* #headLeft{
-    width: 600px;
-    height: 60px;
-    background: palegreen;
-    float: left;
-}
-#headRight{
-    width: 300px;
-  /* //  width: auto; */
-    /* height: 60px;
-    background: plum;
-    text-align: right;
-    float: right;
-    /* margin:10px; 
-} */ 
-h1{
-    font-size: 48px;
-    color: silver;
-}
 u{
     text-decoration: none;
     font-weight: 300;
@@ -84,6 +60,7 @@ a:hover{
 button{
     width: 100%;
     height: 100%;
+    font-family: 'Roboto', sans-serif;
     font-size: 12px;
     font-weight: 400;
     text-transform: uppercase;
@@ -110,6 +87,7 @@ button{
     border-radius: 10px;
     background-color: var(--backG);
     outline: none;
+    box-shadow: 0 6px 16px -6px black;
     -webkit-box-shadow: 0 6px 16px -6px black;
 }
 
@@ -148,16 +126,16 @@ button{
     box-shadow: 0 6px 16px -6px black;
     -webkit-box-shadow: 0 6px 16px -6px black;
 }
-.bigContainer{
+.timeContainer{
     height: 90px;
     width: 100%;
-    color: silver; */
+    color: silver; 
     text-align: center; 
     margin:  0 auto 10px auto;
     border-radius: 10px;
     background-color: var(--backG);
     box-shadow: 0 6px 16px -6px black;
-    -webkit-box-shadow: 0 6px 16px -6px black; */
+    -webkit-box-shadow: 0 6px 16px -6px black; 
 }
 span{
     font-size: 24px;
@@ -166,37 +144,18 @@ span{
     text-transform: uppercase;
     color: ghostwhite;
 }
-/* .vContainer{
-    width: 90%;
-    height: auto;
-    margin:  0 auto 10px auto;
-    border-radius: 10px;
-    background-color: var(--backG);
-    box-shadow: 0 6px 16px -6px black;
-    -webkit-box-shadow: 0 6px 16px -6px black;
-} */
-/* #rMainContainer{
-    height: 380px;
-    width: 120px;
-    font-size: 32px;
+#zeit{
+    font-size: 48px;
+    font-weight: 100;
+    line-height: 66px;
+}
+#datum{
+    font-size: 12px;
+
     font-weight: 400;
-    text-align: center;
     text-transform: uppercase;
-    color: silver;
-    margin:  5px auto;
-    border-radius: 10px;
-    background-color: dimgray;
-    -webkit-box-shadow: 0 6px 16px -6px black;
-} */
-/* .rCon{
-    height: 35px;
-    background: darkslategray;
-    border: 1px solid silver;
-} */
-/* #displayContainer{
-    height: 55px;
-    background: #000000;
-} */
+} 
+
 button:focus, button:hover{
     color: #fff;
     border: 2px solid var(--backG);
