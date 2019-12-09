@@ -1,9 +1,5 @@
-var volumi = document.getElementById("volumio");
-volumi.addEventListener("click", expander);
+
 var myH;
-function expander(){
-    window.alert("HELLO, WORLD " + myH);
-}
 
 function tellTime() {
     let now = new Date();

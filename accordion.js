@@ -68,7 +68,8 @@ aBtn1.addEventListener('click', function(){
 });
 
 socket.on('pushState', function(data){
-  outA.innerHTML = '<strong>' + data.title +'</strong>' + '<br>'  + data.artist +  '<br>' +  data.album   + "____"+ data.volume +"%";
+  let myL = data.volume %10;
+  outA.innerHTML = '<strong>' + data.title +'</strong>' + '<br>'  + data.artist +  '<br>' +  data.album   + data.volume +"%" + myL;
   // outT.innerHTML = ":" + data.title;
 });
 
