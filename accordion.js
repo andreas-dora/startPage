@@ -3,11 +3,13 @@ var socket = io.connect('http://volumio.local/');
 var volu  = document.getElementById('volumio');
 var plus  = document.getElementById('plus');
 var min  = document.getElementById('minus');
-var unmu  = document.getElementById('unmute');
+var prv = document.getElementById("prev");
+var nxt = document.getElementById("next");
+// var unmu  = document.getElementById('unmute');
 var mu  = document.getElementById('mute');
 var aB1  = document.getElementById('aBtn1');
 var aIn1  = document.getElementById('aIn1');
-var gState  = document.getElementById('getState');
+// var gState  = document.getElementById('getState');
 var off = document.getElementById("off");
 
 var alSt = document.getElementById('alarmState');
@@ -25,12 +27,21 @@ min.addEventListener('click', function(){
   socket.emit('volume', '-');
   console.log(socket.emit);
 });
-unmu.addEventListener('click', function(){
-  socket.emit('unmute', '');
+prv.addEventListener('click', function(){
+  socket.emit('prev', '');
   console.log(socket.emit);
 });
+nxt.addEventListener('click', function(){
+  socket.emit('next', '');
+  console.log(socket.emit);
+});
+
+// unmu.addEventListener('click', function(){
+//   socket.emit('unmute', '');
+//   console.log(socket.emit);
+// });
 mu.addEventListener('click', function(){
-  socket.emit('mute', '');
+  socket.emit('volume', 10);
   console.log(socket.emit);
 });
 volu.addEventListener('click', function(){
@@ -57,7 +68,7 @@ aBtn1.addEventListener('click', function(){
 });
 
 socket.on('pushState', function(data){
-  outA.innerHTML = '<strong>' + data.artist +'</strong>' +": "   + data.title + " [" + data.album +"]";
+  outA.innerHTML = '<strong>' + data.title +'</strong>' + '<br>'  + data.artist +  '<br>' +  data.album   + "____"+ data.volume +"%";
   // outT.innerHTML = ":" + data.title;
 });
 
