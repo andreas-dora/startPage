@@ -20,9 +20,7 @@ function tellTime() {
     //var myDatum = myDate;
    // let myDatum = myDate + "." + myMonth +".";
     var myDatum = tage[myDay] + " " + myDate + "." + myMonth;
-
-
-    
+  
    // document.getElementById("tag").innerText = tage[myDay];
     document.getElementById("zeit").innerText = myTime;
     document.getElementById("datum").innerText = myDatum;

@@ -1,8 +1,9 @@
 var socket = io.connect('http://volumio.local/');
-
+// var v = 100;
 var volu  = document.getElementById('volumio'); 
 var outA = document.getElementById('artistOut');
-
+var pegel = document.getElementById('pegel');
+// pegel.style.width = v +"%" ;
 var mu  = document.getElementById('mute');
 var plus  = document.getElementById('plus');
 var min  = document.getElementById('minus');
@@ -21,7 +22,8 @@ volu.addEventListener('click', function(){
   
 });
 socket.on('pushState', function(data){
-  outA.innerHTML = data.artist +  '<br>' + '<strong>' + data.title +'</strong>' + '<br>' + data.album + '<br>' +  data.volume + "%";
+  outA.innerHTML = data.artist +  '<br>' + '<strong>' + data.title +'</strong>' + '<br>' + data.album + ' ' +  data.volume + "%";
+  pegel.style.width = data.volume +"%";
 });
 
 mu.addEventListener('click', function(){
