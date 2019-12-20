@@ -1,3 +1,6 @@
+Es Funktioniert leider nur die Locale Kopie
+
+
 # Für Volumio
 io.emit('message','data');
 io.emit('volume', 90);
