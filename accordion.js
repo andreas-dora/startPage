@@ -15,7 +15,6 @@ var pau = document.getElementById("pause");
 var off = document.getElementById("shutdown");
 
 
-// var outT = document.getElementById('titel');
 
 volu.addEventListener('click', function(){
   socket.emit('getState','');
@@ -56,17 +55,7 @@ off.addEventListener('click', function(){
 
 var accord = document.getElementsByClassName("accordion");
 var i;
-// for(let i = 0; i < accord.length; i++){
-//   accord[i].addEventListener("click", function(){
-//     this.classList.toggle("active");
-//     var panel = this.nextElementSibling;
-//     if(panel.style.display === "block"){
-//       panel.style.display = "none";
-//     } else {
-//       panel.style.display = "block";
-//     }
-//   });
-// }
+
 
 for (i = 0; i < accord.length; i++) {
   accord[i].addEventListener("click", function() {
