@@ -9,7 +9,8 @@ function tellTime() {
 
     let myDay = now.getDay();
     let myDate = now.getDate().toString().padStart(2, 0);
-    let myMonth = now.getMonth().toString().padStart(2, 0);
+    let myM_ = now.getMonth()+1; 
+    let myMonth = myM_.toString().padStart(2, 0);
     //let myMonth = now.getMonth();
     // let myY = now.getFullYear().toString();
 
