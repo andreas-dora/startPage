@@ -81,5 +81,5 @@ nav a:hover{
     font-weight: bold;
     border: none;
     /* border-radius: 3px; */
-    box-shadow:  3px 3px 6px rgba(0, 0, 0, 0.2), -1px 0 0 1px  rgba(220, 220, 220, 0.2);}
+    box-shadow:  3px 3px 6px rgba(0, 0, 0, 0.2), -1px 0 0 1px  rgba(220, 220, 220, 0.2);
   }
