@@ -185,8 +185,13 @@ border: 2px solid #ffffff;
 h1{ color: var(--ghost);}
 
 a{
+  text-decoration: none;
   color: var(--secC);
+  display: block;
+  padding: 10px 20px;
+  border: 1px solid var(--ghost);
 }
 a:hover{
   color: var(--w);
+
 }
