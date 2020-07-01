@@ -1,4 +1,4 @@
-var socket = io.connect('http://volumio.local/');
+var socket = io.connect('http://asound.local/');
 // var v = 100;
 var volu  = document.getElementById('volumio'); 
 var outA = document.getElementById('artistOut');
@@ -16,14 +16,14 @@ var off = document.getElementById("shutdown");
 
 
 
-volu.addEventListener('click', function(){
-  socket.emit('getState','');
+// volu.addEventListener('click', function(){
+//   socket.emit('getState','');
   
-});
-socket.on('pushState', function(data){
-  outA.innerHTML = data.artist +  '<br>' + '<strong>' + data.title +'</strong>' + '<br>' + data.album + ' ' +  data.volume + "%";
-  pegel.style.width = data.volume +"%";
-});
+// });
+// socket.on('pushState', function(data){
+//   outA.innerHTML = data.artist +  '<br>' + '<strong>' + data.title +'</strong>' + '<br>' + data.album + ' ' +  data.volume + "%";
+//   pegel.style.width = data.volume +"%";
+// });
 
 mu.addEventListener('click', function(){
   socket.emit('volume', 10);
