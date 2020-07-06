@@ -1,4 +1,4 @@
-var socket = io.connect('http://asound.local/');
+var socket = io.connect('http://volumio.local/');
 // var v = 100;
 var volu  = document.getElementById('volumio'); 
 var outA = document.getElementById('artistOut');

@@ -54,6 +54,7 @@ pau.addEventListener('click', function(){
 
 off.addEventListener('click', function(){
   socket.emit('shutdown', '');
+  
 });
 
 
