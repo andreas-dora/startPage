@@ -19,6 +19,8 @@ var off = document.getElementById("shutdown");
 // volu.addEventListener('click', function(){
 //   socket.emit('getState','');
   
+
+
 // });
 // socket.on('pushState', function(data){
 //   outA.innerHTML = data.artist +  '<br>' + '<strong>' + data.title +'</strong>' + '<br>' + data.album + ' ' +  data.volume + "%";

@@ -94,6 +94,7 @@ button{
   height: auto;
   padding: 0px 8px;  
   background-color:var(--backG);
+  
   border-radius: 0 0 10px 10px;
   border-top: 0;  
   max-height: 0;
@@ -150,6 +151,19 @@ button{
 color: #ffffff;
 border: 1px solid #ffffff;  
 }  */
+
+.smallLink{
+  width: 80%;
+  /* padding:13px 0;  */
+  background-color: var(--darker);
+  color: silver;
+  border: 2px solid silver;
+  /* border-radius: 25px; */
+  /* cursor: pointer; */
+  overflow: hidden;
+  box-shadow: 0 6px 16px -6px black;
+  -webkit-box-shadow: 0 6px 16px -6px black;
+}
 .third{
   width: 30%;
   padding:13px 0; 
