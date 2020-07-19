@@ -81,6 +81,44 @@ body {
   background-size: cover;
   background-color: #000;
 }
+section{
+  height: 100vh;
+  position: relative;
+  background-color: dimgray;
+}
+.sizeBox{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translateY(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: gainsboro;
+}
+
+#id_900_563{
+  width: 900px;
+  height: 563px;
+}
+
+#id_800_500{
+  width: 800px;
+  height: 500px;
+}
+#id_700_438{
+  width: 700px;
+  height: 438px;
+}
+#id_640_360{
+  width: 600px;
+  height: 375px;
+}
+
+#id_600_375{
+  width: 600px;
+  height: 375px;
+}
+
 .container {
   position: relative;
   height: 100vh;
@@ -93,6 +131,7 @@ body {
   transform: translate(-50%, -50%);
   font-size: 20vh;
 }
+
 #html { background-color: #e34f26; }
 #css { background-color: #002561; }
 #javascript { background-color: #333; }
