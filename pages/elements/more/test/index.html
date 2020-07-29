@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time Conversion</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar__title">Machine</div>
+    <a href="#" class="navbar__toggle">
+      <span class="navbar__bar"></span>
+      <span class="navbar__bar"></span>
+      <span class="navbar__bar"></span>
+    </a>
+    <div class="navbar__links">
+      <ul>
+        <li><a href="../../../../index.html">Home</a></li>
+        <li><a href="../../../ressourc.html">Index</a></li>
+      </ul>
+    </div>
+  </nav>
+
+<body>
+
+  <main>
+    
+    <article>
+      <h1>Time Conversion</h1>
+<section>
+<p>Bei einer Übung mit der Open Weathermap-IDE blieb ich mal wieder an einer so scheinbar einfachen Nebensache hängen. Die Zeiten für Sonnenauf- und Untergang werden in UTC-Timestamps ausgegeben. Die kennt man ja vielleicht schon aus der Tabellenkalkulation. Dort gab es nie Probleme damit. Nachdem ich an den gesammelten Javascript Date-Methoden verzweifelt bin, kam ich zu folgender Lösung    </p>
+<pre><code>
+  function stampConverter(utcStamp){
+    
+    var date = new Date(utcStamp * 1000);
+    var h = date.getHours();
+    var m = "0" + date.getMinutes();
+    var seconds = "0" + date.getSeconds();
+    var myTime = h + ':' + m.substr(-2) + ':' + seconds.substr(-2);
+    
+    return myTime;
+  };
+</code></pre>
+
+</section>
+      <div class="sideBox">
+        <div class="sideBox__header">
+          <h5>UTC Conversion</h5>
+        </div>
+        <div class="sideBox__body">
+          <div class="inContainer">
+            <label for="utc_in">Enter UTC Timestamp:</label>
+            <input type="text" name="utc_in" id="id_utc_in">
+          </div>
+          <button class="soloBtn" id="id_utcBtn">Convert</button>
+        <div class="inContainer">
+          <label for="t_out">Your Timestamp:</label>
+          <input type="numeric" class="output" id="id_t_out" readonly>
+        </div>
+        <button class="soloBtn" id="id_copy">Copy</button>
+        </div>
+      </div>
+
+
+
+
+    </article>
+
+
+
+ 
+
+  </main>
+  <script type="text/javascript" src="sketch.js"></script>
+</body>
+</html>
