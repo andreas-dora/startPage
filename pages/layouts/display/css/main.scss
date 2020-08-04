@@ -4,10 +4,10 @@
   box-sizing: border-box;
 }
 
-$background:#696969;
+$c_back:#696969;
 $heller: #808080;
 $dark: #404040;
-$c_text: #fffafa;
+$c_text: rgb(249, 243, 243);
 
 @mixin upper {
   text-transform: uppercase;
@@ -39,6 +39,10 @@ main{
 /*################ Display ######################*/
 /*###############################################*/
 
+#zeit{
+  font-size: 4em;
+  font-weight: lighter;
+}
 
 
 
@@ -60,28 +64,32 @@ main{
   width: 100%;
   height: 30px;
   margin-bottom: 10px;
+  font-size: 1em;
 }
-.headCon button, .linkCon button{
+.headBtn, .lnkBtn{
   width: 100%;
-  height: 100%;
+  padding: 8px 0;
+  margin: 5px 0;
   border: none;
   color: $c_text;
+  @include upper();
 }
 
-.headCon button{
+.headBtn{
   background-color: inherit;
-  @include upper(); 
 }
 
-.linkCon button{
-  background-color: $background;
+.lnkBtn{
+  background-color: $c_back ;
 }
+
+
 
 .panel{
   height: auto;
   // padding: 0 18px;
   // background-color: white;
-  // max-height: 0;
+  max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
@@ -89,12 +97,40 @@ main{
 // @media only screen and (max-width: 600px) {...}
 
 // /* Small devices (portrait tablets and large phones, 600px and up) */
-// @media only screen and (min-width: 600px) {...}
+// @media only screen and (min-width: 800px) {
+//   .linkSection{
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+//     grid-gap: 18px;
+//   }
+// }
 
 // /* Medium devices (landscape tablets, 768px and up) */
-// @media only screen and (min-width: 768px) {...}
+// 
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+@media only screen and (max-width: 992px) {
+  body{
+    font-size: 90%;
+  }
+  button{
+    font-size: 90%;
+  }
+}
 
+
+@media only screen and (max-width: 768px) {
+  body{
+    font-size: 80%;
+  }
+  button{
+    font-size: 80%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .linkSection{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 18px;
+  }
 }

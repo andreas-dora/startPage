@@ -28,6 +28,11 @@ main {
 /*###############################################*/
 /*################ Display ######################*/
 /*###############################################*/
+#zeit {
+  font-size: 4em;
+  font-weight: lighter;
+}
+
 /*###############################################*/
 /*################## Links ######################*/
 /*###############################################*/
@@ -48,32 +53,62 @@ main {
   width: 100%;
   height: 30px;
   margin-bottom: 10px;
+  font-size: 1em;
 }
 
-.headCon button, .linkCon button {
+.headBtn, .lnkBtn {
   width: 100%;
-  height: 100%;
+  padding: 8px 0;
+  margin: 5px 0;
   border: none;
-  color: #fffafa;
-}
-
-.headCon button {
-  background-color: inherit;
+  color: #f9f3f3;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.2em;
 }
 
-.linkCon button {
+.headBtn {
+  background-color: inherit;
+}
+
+.lnkBtn {
   background-color: #696969;
 }
 
 .panel {
   height: auto;
+  max-height: 0;
   overflow: hidden;
   -webkit-transition: max-height 0.2s ease-out;
   transition: max-height 0.2s ease-out;
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  body {
+    font-size: 90%;
+  }
+  button {
+    font-size: 90%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 80%;
+  }
+  button {
+    font-size: 80%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .linkSection {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 18px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
