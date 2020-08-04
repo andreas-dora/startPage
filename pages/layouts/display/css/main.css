@@ -68,5 +68,12 @@ main {
   background-color: #696969;
 }
 
+.panel {
+  height: auto;
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+}
+
 /* Large devices (laptops/desktops, 992px and up) */
 /*# sourceMappingURL=main.css.map */
