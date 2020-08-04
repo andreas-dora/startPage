@@ -33,7 +33,7 @@
 <p>Bei einer Übung mit der Open Weathermap-IDE blieb ich mal wieder an einer so scheinbar einfachen Nebensache hängen. Die Zeiten für Sonnenauf- und Untergang werden in UTC-Timestamps ausgegeben. Die kennt man ja vielleicht schon aus der Tabellenkalkulation. Dort gab es nie Probleme damit. Nachdem ich an den gesammelten Javascript Date-Methoden verzweifelt bin, kam ich zu folgender Lösung    </p>
 <pre><code>
   function stampConverter(utcStamp){
-    
+
     var date = new Date(utcStamp * 1000);
     var h = date.getHours();
     var m = "0" + date.getMinutes();
@@ -50,6 +50,8 @@
           <h5>UTC Conversion</h5>
         </div>
         <div class="sideBox__body">
+          <div class="timeContainer" id="zeit"></div>
+          <div class="timContainer" id="utc"></div>
           <div class="inContainer">
             <label for="utc_in">Enter UTC Timestamp:</label>
             <input type="text" name="utc_in" id="id_utc_in">
@@ -74,5 +76,6 @@
 
   </main>
   <script type="text/javascript" src="sketch.js"></script>
+  <script type="text/javascript" src="time.js"></script>
 </body>
 </html>

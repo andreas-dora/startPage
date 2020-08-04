@@ -1,12 +1,14 @@
 *{
   padding: 0;
   margin: 0;
+  
   /* outline: 1px solid lightskyblue; */
 }
 :root{
   --c-back: #5e5d5d;
   --snow: #fffafa;
   --nav: #696969;
+  --width-page: 80%;
 }
 body{
   background-color: var(--c-back);
@@ -17,7 +19,7 @@ body{
 }
 
 main{
-  width: 80%;
+  width: var(--width-page);
   margin: 70px auto;
 }
 h1{
@@ -41,6 +43,7 @@ h1{
 .navbar__title{
   font-size: 1.5rem;
   margin: .5rem; 
+
 }
 
 .navbar__links ul{ 
@@ -69,16 +72,18 @@ h1{
   display: none;
   flex-direction: column;
   justify-content: space-between;
-  width: 30px;
-  height: 21px;
+  /* width: 30px;
+  height: 21px; */
+  color: snow;
+
 }
-.navbar__bar{
+/* .navbar__bar{
 
   height: 3px;
   width: 100%;
   background-color: snow;
   border-radius: 10px;
-}
+} */
 
 @media (max-width: 600px){
   .navbar__toggle{

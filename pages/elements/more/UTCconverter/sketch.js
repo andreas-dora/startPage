@@ -7,9 +7,9 @@ toggleBtn.addEventListener('click', () =>{
 const input = document.getElementById("id_utc_in");
 
 /* #############################*/
+/* ####### UTC Converter #######*/
 /* #############################*/
-/* #############################*/
-;
+
 const timeBtn = document.getElementById('id_utcBtn');
 
 timeBtn.addEventListener('click', () => {
@@ -17,7 +17,6 @@ timeBtn.addEventListener('click', () => {
   var coolTime = stampConverter(input.value);
   console.log(coolTime);
   document.getElementById("id_t_out").value =coolTime;
-
 });
 
 

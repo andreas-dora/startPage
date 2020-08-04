@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* outline: 1px solid lightskyblue; */
+}
+
+:root {
+  --c-back: #5e5d5d;
+  --snow: #fffafa;
+  --nav: #696969;
+  --width-page: 80%;
+}
+
+body {
+  background-color: var(--c-back);
+  font-family: Helvetica, sans-serif;
+  font-size: 100%;
+  line-height: 1.5em;
+  color: var(--snow);
+}
+
+main {
+  width: var(--width-page);
+  margin: 70px auto;
+}
+
+h1 {
+  font-size: 6vw;
+  margin-bottom: 4vw;
+}
+
+/*################################################*/
+/*################################################*/
+/*################################################*/
+.navbar {
+  background-color: var(--nav);
+  color: snow;
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.02);
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.02);
+}
+
+.navbar__width {
+  width: var(--width-page);
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar__title {
+  display: inline-block;
+}
+
+.navbar__linkContainer {
+  background-color: dodgerblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: right;
+      -ms-flex-align: right;
+          align-items: right;
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+}
+
+.navbar a {
+  color: var(--snow);
+  text-decoration: none;
+  padding: 6px 10px;
+}
+
+.navbar a:hover {
+  background-color: var(--c-back);
+}
+
+.navbar__toggle {
+  display: none;
+}
+
+/*################################################*/
+/*################################################*/
+/*################################################*/
+@media (max-width: 600px) {
+  .navbar__toggle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar__links {
+    display: none;
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
