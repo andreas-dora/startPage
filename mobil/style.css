@@ -26,27 +26,27 @@
     
     }
 body{
-    background-color: var(--c-back);
-    color: var(--c-dunkel);
+    background-color: var(--c-dunkel);
     font-family: 'Cairo', sans-serif;
 }
 main{
    width: 100%;
-   /* height: 100vh;
-    */
+    height: 100vh;
+    display: flex;
+    align-items: center;
 }
 section{
     max-width: 750Px;
     min-width: 300px;
-    max-height: 1334px;
-    height: 95vh;
+    /* max-height: 1334px; */
+    height: 90%;
     margin: 0 auto;
 padding: 1em .4em;
     background-color: var(--c-dunkel);
     border: 1px solid silver;
     display: grid;
    grid-template-columns: minmax(70px, 1fr) minmax(70px, 1fr) minmax(70px, 1fr)  ;
-   grid-template-rows: minmax(70px, 1fr) minmax(70px, 2fr) minmax(70px, 1fr) 1fr minmax(70px, 1fr);
+   grid-template-rows: minmax(40px, 2fr) minmax(40px, 3fr) minmax(40px, 2fr) 1fr minmax(40px, 2fr);
    gap: 1.5em;
 
 }
@@ -57,7 +57,9 @@ button{
     border-radius: 8%;
 }
 button:hover{
-    color: yellow;
+    color: var(--c-hilite);
+    /* background-color: black; */
+    border-color: var(--c-hilite);
 }
 .shutdown{
     grid-column:1;
