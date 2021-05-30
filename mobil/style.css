@@ -39,14 +39,14 @@ section{
     max-width: 750Px;
     min-width: 300px;
     max-height: 1334px;
-    height: 98%;
+    height: 95vh;
     margin: 0 auto;
-    padding: 1em;
+padding: 1em .4em;
     background-color: var(--c-dunkel);
     border: 1px solid silver;
     display: grid;
    grid-template-columns: minmax(70px, 1fr) minmax(70px, 1fr) minmax(70px, 1fr)  ;
-   grid-template-rows: minmax(70px, 1fr) minmax(70px, 2fr) minmax(70px, 1fr) minmax(70px, 1fr) minmax(70px, 1fr);
+   grid-template-rows: minmax(70px, 1fr) minmax(70px, 2fr) minmax(70px, 1fr) 1fr minmax(70px, 1fr);
    gap: 1.5em;
 
 }
@@ -54,7 +54,7 @@ button{
     background-color: var(--c-dunkel);
     color: var(--c-back);
     border: 0.25em solid var(--c-back);
-    border-radius: 4%;
+    border-radius: 8%;
 }
 button:hover{
     color: yellow;
