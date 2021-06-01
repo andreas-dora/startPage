@@ -50,6 +50,14 @@ padding: 1em .4em;
    gap: 1.5em;
 
 }
+a{
+    display: block;
+    font-family: inherit;
+    text-align: center;
+    text-decoration: none;
+    color: var(--c-back);
+    border: 0.15em solid var(--c-back);
+    border-radius: 8%;}
 button{
     background-color: var(--c-dunkel);
     color: var(--c-back);
