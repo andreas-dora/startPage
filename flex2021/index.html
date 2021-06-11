@@ -4,24 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meine Startseite</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="main.css">
+    <title>Start Flex</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-        <section>
+    <section class="sectionOne">
+        <div class="top">
             <form action="https://google.com/search" target="_blank" method="GET">
-                <input type="text" placeholder="Suche" name="q">
-                <button type="submit" name="q">Go</button>
+                <input type="text" class="google" name="q">
+                <button class="sBtn" name="q">go</button>
+                <button class="sBtn">map</button>
             </form>
             <div class="clock">
-                <div class="time">23:00</div>
-                <div class="date">Dienstag 23.04.21</div>
+                <div class="time">23:11</div>
+                <div class="date"> Sa. 21 November</div>
             </div>
-        </section>
-        <section>
+        </div>
+        <div class="main">
             <div class="column">
                 <div class="header">Home</div>
                 <a href="https://drive.google.com/drive/u/0/my-drive" target="_blank" rel="noopener noreferrer">Drive</a>
@@ -66,13 +65,7 @@
                 <a href="https://webp-converter.com/" target="_blank" rel="noopener noreferrer">web P</a>
                 <a href="https://bennettfeely.com/clippy/" target="_blank" rel="noopener noreferrer">Clippy</a>
             </div>
-        </section>
-        
-
-
-    </main>
-    
-    <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Europe%2FBerlin&amp;src=YW5kcmVhc0BzbzBuLmRl&amp;src=ZXFqZnZhNnBjMGJra2E3cWk5Y21qaHVwZ2NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=azhkMnY0bGdxYXUyZ2V2ZmNqY3ZwbzBxbmNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23039BE5&amp;color=%233F51B5&amp;color=%23EF6C00&amp;color=%2333B679&amp;showTz=0&amp;showTabs=1&amp;showNav=1&amp;mode=AGENDA" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-    <script src="myFrame.js"></script>
+        </div>
+    </section>
 </body>
 </html>

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="myStyle.css">
+  <script src="https://kit.fontawesome.com/ed5a369c51.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+  <title>ANDI Start</title>
+</head>
+<body>
+  <main>
+    <div class="column" id="col1">
+        <div class="hCon"><h5>Meine Seiten</h5></div>
+        <div class="linkContainer">
+          <a href="https://drive.google.com/drive/u/0/my-drive" target="_blank"><button class="myB">Drive</button></a>
+        </div>
+        <div class="linkContainer">
+          <a href="https://github.com/andreas-dora" target="_blank"><button class="myB">Github</button></a>
+        </div>
+        <div class="linkContainer">
+          <a href="https://www.icloud.com/iclouddrive/" target="_blank"><button class="myB">ICloud</button></a>
+        </div>
+        <div class="linkContainer">
+          <a href="" target="_blank"><button class="myB">DropBox</button></a>
+        </div>  
+        <div class="linkContainer">
+          <a href="https://www.figma.com/files/recent" target="_blank"><button button class="myB">figma</button></a>
+        </div> 
+        <div class="linkContainer">
+          <a href="https://codepen.io/Breitwieser/pen/zYYyeRg" target="_blank"><button button class="myB">Code Pen</button></a>
+        </div>
+        <div class="linkContainer">
+          <a href="https://www.kernelhost.de/" target="_blank"><button button class="myB">Kernelhost</button></a>
+        </div>
+        <div class="linkContainer">
+          <a href="https://friends-electric.de/wp-login.php" target="_blank"><button button class="myB">WP Electric</button></a>
+        </div>
+        <div class="linkContainer">
+          <a href="https://andreas-dora.github.io/test_seite/" target="_blank"><button button class="myB">Test Dept.</button></a>
+        </div>
+
+        <div class="accordCon">
+          <button class="accordion">Shopping</button>
+          <div class="panel">
+            <div class="linkContainer">
+              <a href="https://www.ebay.de/" target="_blank">
+                <button class="myB">ebay</button></a>
+              </div>
+              <div class="linkContainer">
+                <a href="https://www.ebay-kleinanzeigen.de/" target="_blank"><button class="myB">kleinanzeigen</button></a>
+              </div>
+              <div class="linkContainer">
+                <a href="https://www.dhl.de/de/privatkunden/dhl-sendungsverfolgung.html" target="_blank">
+                    <button class="myB">DHL Sendeverfolgung</button></a>
+            </div>          
+              <div class="linkContainer">
+                <a href="https://www.amazon.de/" target="_blank">
+                    <button class="myB">Amazon</button></a>
+            </div>          
+            <div class="linkContainer"></div>
+            <a href="https://meine.deutsche-bank.de/trxm/db/" target="_blank">
+                <button class="myB">Accounting</button></a>
+        </div>
+  
+      </div>
+      <div class="linkContainer"></div>
+      <a href="https://perso.e2n.de/secure/index.jsf" target="_blank">
+          <button class="myB">Montez</button></a>
+  </div>
+
+        </div>
+
+
+    </div>
+
+
+    
+    <div class="column" id="col2">
+        <div class="hCon"><h5>HOME</h5></div>
+    <div class="accordCon">
+        <button class="accordion" id="volumio">Volumio</button>
+        <div class="panel">
+            <div class="row">
+              <figure id="cover"></figure>
+              </div>
+            <div class="row">
+
+                <div class="outCon">
+                  <div class="output" id="artistOut"></div>
+                  <div class="vCon">
+                    <div class="vBar" id="pegel"></div>
+                </div>
+                </div>
+
+              </div>
+
+            <div class="row">
+                <button class="third" id="mute"><i class="fas fa-volume-off fa-lg"></i></button>
+
+                <button class="third" id="minus"><i class="fas fa-volume-down fa-lg"></i></button>
+                <button class="third" id="plus"><i class="fas fa-volume-up fa-lg"></i></button>
+              </div>
+
+            <div class="row">
+                <button class="third" id="prev"><i class="fas fa-step-backward fa-lg"></i></button>
+                <button class="third" id="play"><i class="fas fa-play fa-lg"></i></button>
+  
+                <button class="third" id="next"><i class="fas fa-step-forward fa-lg"></i></button>
+              </div>
+
+              <div class="row">
+                <a href="http://volumio.local/playback" target="_blank"><button class="third" id="web">web</button></a>
+                  <!-- <button class="third" id="stop"><i class="fas fa-stop fa-lg"></i></button> -->
+                
+                  <button class="third" id="pause"><i class="fas fa-pause" fa-lg></i></button>
+                  <button class="third" id="shutdown"><i class="fas fa-power-off fa-lg"></i></button>
+                  
+               
+
+                
+              </div>   
+        </div>
+    </div>
+    <div class="accordCon">
+        <button class="accordion">Wecker</button>
+        <div class="panel">
+            <div class="row">
+                <button class="half" id="alarmState">?</button>
+              </div>
+            <div class="row">
+                <input type="time" id="aIn1" value=09:00>
+                <button class="half" id="aBtn1">set</button>
+              </div>
+              <!-- <div class="row">
+                  <button class="half" id="reboot">Reboot</button>
+                  <button class="half" id="off">off</button>
+                </div>    -->
+        </div>
+ 
+    </div>
+
+        <div class="hCon"><h5>Coding Train</h5></div>
+        <div class="linkContainer">
+            <a href="https://processing.org/reference/" target="_blank"><button class="myB">Processing</button></a>
+        </div>
+
+
+   <div class="linkContainer">
+        <a href="https://p5js.org/reference/" target="_blank"><button class="myB">P5.js</button></a>
+    </div>
+
+    <div class="linkContainer">
+            <a href="https://www.youtube.com/user/shiffman" target="_blank"><button class="myB">on Youtube</button></a>
+    </div>                               
+    <div class="linkContainer">
+            <a href="https://thecodingtrain.com/" target="_blank"><button class="myB">on Github</button></a>
+    </div> 
+  
+    <div class="hCon"><h5>CSS</h5></div>
+    <div class="linkContainer">
+      <a href="cssTipOftheday.html" target="_blank"><button class="myB">Tip of the Day</button></a>
+</div> 
+<div class="linkContainer">
+<a href="https://volumio.org/" target="_blank">
+  <button class="myB">volumio</button></a>
+</div>
+<div class="linkContainer">
+  <a href="https://www.youtube.com/" target="_blank">
+  <button class="myB">Youtube</button></a>
+</div>
+</div>
+<div class="column" id="col3">
+    <div class="hCon"><h5>Web Dev</h5></div>
+
+    <div class="linkContainer">
+            <a href="https://www.w3schools.com/howto/default.asp" target="_blank"><button class="myB">W3 how to</button></a>
+    </div>
+
+    <div class="linkContainer">
+    <a href="https://fonts.google.com/" target="_blank"><button class="myB">Google Fonts</button class="myB"></a>
+        </div>
+    <div class="linkContainer">
+    <a href="https://fontawesome.com/start" target="_blank"><button class="myB">Font Awsome</button class="myB"></a>
+        </div>
+
+
+
+    <div class="linkContainer">
+            <a href="https://www.w3schools.com/colors/colors_picker.asp" target="_blank"><button class="myB">Color</button></a>
+    </div>
+    <div class="linkContainer">
+    <a href="https://developer.mozilla.org/de/#" target="_blank"><button class="myB">MDN de</button></a>
+</div>
+
+    <div class="linkContainer">
+            <a href="https://www.mozilla.org/de/firefox/developer/?utm_campaign=css_grid_learn_more_2&utm_medium=referral&utm_source=developer.mozilla.org" target="_blank"><button class="myB">Firefox Dev</button></a>
+</div>
+
+<div class="linkContainer">
+    <a href="https://css-tricks.com/" target="_blank"><button class="myB">CSS Tricks</button></a>
+   </div>
+<div class="linkContainer">
+    <a href="https://bennettfeely.com/clippy/" target="_blank"><button class="myB">Clippy</button></a>
+   </div>
+
+   <div class="linkContainer">
+    <a href="http://expressjs.com/de/" target="_blank"><button class="myB">Express</button></a>
+   </div>
+
+<div class="linkContainer">
+    <a href="./Sizes/index.html" target="_blank"><button class="myB">Sizes & Beakpoints</button></a>
+    </div>
+
+    <div class="linkContainer">
+      <a href="http://localhost:3000/" target="_blank"><button class="myB">Local Host 3000</button></a>
+      </div>
+    <div class="linkContainer">
+      <a href="http://192.168.64.2/start.html" target="_blank"><button class="myB">Xampp</button></a>
+      </div>
+    <div class="linkContainer">
+      <a href="http://localhost:8080/phpmyadmin/index.php" target="_blank"><button class="myB">PHP MyAdmin</button></a>
+      </div>
+
+</div>
+<div class="column" id="col4">
+    <div class="tCon">
+      <div id="zeit"></div>
+      <div id="datum"></div>
+    </div>  
+
+    <div class="hCon"><h5>Wohnungssuche</h5></div>
+    <div class="linkContainer">
+      <a href="https://www.wohnen-in-der-mitte.de/mietwohnungen/" target="_blank" rel="noopener noreferrer"><button class="myB">Nassauische</button></a>
+    </div>
+    <div class="linkContainer">
+      <a href="https://www.immobilienscout24.de/" target="_blank" rel="noopener noreferrer"><button class="myB">Immo Scout 24</button></a>
+    </div>
+    <div class="linkContainer">
+      <a href="https://www.immonet.de/immobiliensuche/sel.do?&marketingtype=2&fromarea=29.0&toprice=490.0&city=124800&objectrights=1&district=11335&parentcat=1&sortby=19&suchart=1&objecttype=1&outputtype=ajax&searchall=27l19i7217709417" target="_blank" rel="noopener noreferrer"><button class="myB">Immo Net</button></a>
+    </div>
+
+
+
+
+    <div class="hCon"><h5>Arbeitssuche</h5></div>
+    <div class="linkContainer">
+      <a href="https://con.arbeitsagentur.de/prod/jobboerse/jobsuche-ui/?pk_vid=1611592561760fb8" target="_blank" rel="noopener noreferrer"><button class="myB">Arbeitsagentur</button></a>
+    </div>
+    <div class="linkContainer">
+      <a href="https://de.indeed.com/?from=gnav-jobsearch--jasx" target="_blank" rel="noopener noreferrer"><button class="myB">indeed</button></a>
+    </div>
+    <div class="linkContainer">
+      <a href="tryNew/index.html" target="_blank" rel="noopener noreferrer"><button class="myB">new version</button></a>
+    </div>
+    <div class="linkContainer">
+      <a href="mobil/index.html" target="_blank" rel="noopener noreferrer"><button class="myB">mobil</button></a>
+    </div>
+
+    <div class="hCon"><h5>Atelier Obskur</h5></div>
+    <div class="linkContainer">
+            <a href="https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=13&ct=1573563163&rver=7.1.6819.0&wp=MBI_SSL_SHARED&lc=1031&id=250206&cbcxt=sky&ru=https%3A%2F%2Fonedrive%2Elive%2Ecom%2F%3Fid%3D55EEA57ECDE5CC7C%252112163%26cid%3D55EEA57ECDE5CC7C&wreply=https%3A%2F%2Fonedrive%2Elive%2Ecom%2F%3Fid%3D55EEA57ECDE5CC7C%252112163%26cid%3D55EEA57ECDE5CC7C" target="_blank"><button class="myB">OneDrive</button></a>
+                </div>
+            <div class="linkContainer">
+                    <a href="https://drive.google.com/drive/u/0/folders/1PMIPcCaUVW7o3H_qeyGWV2Vfhk5W577l" target="_blank"><button class="myB">Drive</button></a>
+                </div>
+                <div class="linkContainer">
+                        <a href="https://communicator.strato.de/appsuite/ui#!!&app=io.ox/mail&folder=default0/INBOX" target="_blank"><button class="myB">WebMail</button></a>
+                </div>    
+                <div class="linkContainer">
+                        <a href="https://banking.sparda.de/spm/?institut=5009" target="_blank"><button class="myB">Accounting</button></a>
+                </div>
+
+                <div class="linkContainer">
+                        <a href="https://to-do.microsoft.com/tasks/AQMkADAwATM3ZmYAZS0yNmJmLTYxMzAtMDACLTAwCgAuAAADIc04HgDrMkapgfrz4dLp7gEAYDkFouFvk0OkekC6z39vmQAAAEngUXMAAAA=" target="_blank"><button class="myB">To Do List</button></a>
+                </div>  
+                <div class="linkContainer">
+                    <a href="https://onedrive.live.com/view.aspx?resid=55EEA57ECDE5CC7C!15697&ithint=file%2cxlsx&authkey=!AktoUEhpTyjk9kM" target="_blank"><button class="myB">Dienstplan</button></a>
+            </div>  
+                <div class="linkContainer">
+                        <a href="https://andreas-dora.github.io/rechenhilfe/" target="_blank"><button class="myB">Rechenhilfe</button></a>
+                </div>          
+
+                <div class="linkContainer">
+                        <a href="https://www.rmv.de/auskunft/bin/jp/stboard.exe/dn?L=vs_anzeigetafel&cfgfile=FrankfurtM_3001539_1319011122&start=1" target="_blank"><button class="myB">Straßenbahn</button></a>
+                </div>                           
+
+                <div class="linkContainer">
+                  <a href="https://to-do.microsoft.com/tasks/important" target="_blank"><button class="myB">Tasks</button></a>
+          </div>           
+        
+                <div class="linkContainer">
+                  <a href="http://mitarbeiter.kabinett-kurios.de/wp-login.php" target="_blank"><button class="myB">WP Login</button></a>
+          </div>           
+          <div class="linkContainer">
+            <a href="https://andreas-dora.github.io/a_o/" target="_blank"><button button class="myB">AO Mitarbeiter</button></a>
+            </div> 
+    </div>
+
+    
+
+</main>
+
+
+        <script type="text/javascript" src="./sketch.js"></script>
+
+        <script type="text/javascript" src="./accordion.js"></script>
+</body>
+</html>
