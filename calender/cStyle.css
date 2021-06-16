@@ -1,0 +1,34 @@
+*, *:before, *:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+  --c-mainblau: #034f67;
+  --c-hellgrau: #e6e1dc;
+  --c-bikini: #77212e;
+  --c-dunkel: #373434;
+  --c-chili: #9B2335;
+  --c-alarm: #f9423a;
+  --c-superblue: #4244b6;
+  --c-bronze: #a6966c;
+  
+  --c-back: #3e3d3d;
+  --c-hiBack: rgb(30, 30,30);
+  --c-text: #f8f8ff;
+  --c-accent: rgb(42, 41, 41);;
+  --c-hilite: #f0e68c;;
+  --sans: 'Barlow', sans-serif;
+  --sans: Helvetica, sans-serif;
+  --serif:'Times New Roman', Times, serif;
+  --code: 'Courier New', Courier, monospace;
+  --maxW: 1000px;
+  --topOffset: 4em;
+}
+body{
+    background-color: var(--c-back);
+}
+section{
+    display: flex;
+    align-content: center;
+}
