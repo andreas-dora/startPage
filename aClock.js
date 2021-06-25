@@ -2,10 +2,6 @@ const canvas = document.querySelector('canvas');
 canvas.width = 220;
 canvas.height = 220;
 // canvas.height = window.innerHeight;
-
-
-
-
 const ctx = canvas.getContext('2d');
 var clock_x = canvas.width / 2;
 var clock_y = canvas.height / 2;
@@ -77,7 +73,9 @@ ctx.translate(clock_x, clock_y);
 ctx.rotate(stundenWinkel);
 ctx.beginPath();
 ctx.fillStyle = '#fff';
-ctx.fillRect(-3, 10, 6,- clock_r*0.9);
+ctx.fillRect(-3, 0, 6,- clock_r*0.86);
+// ctx.fillStyle = '#000';
+// ctx.fillRect(-2, 0, 4,- clock_r*0.84);
 ctx.restore();
 ctx.save();
 
@@ -94,7 +92,7 @@ ctx.translate(clock_x, clock_y);
 ctx.rotate(sekundenWinkel);
 ctx.beginPath();
 ctx.fillStyle = '#f9423a';
-ctx.fillRect(-1,0, 2,-clock_r*0.96);
+ctx.fillRect(-1,12, 2, -clock_r*1.1);
 ctx.restore();
 ctx.save();
 

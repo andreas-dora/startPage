@@ -19,7 +19,7 @@
   --c-accent: rgb(42, 41, 41);;
   --c-hilite: #f0e68c;;
   --sans: 'Barlow', sans-serif;
-  --sans: Helvetica, sans-serif;
+  /* --sans: Helvetica, sans-serif; */
   --serif:'Times New Roman', Times, serif;
   --code: 'Courier New', Courier, monospace;
   --maxW: 1000px;
@@ -67,10 +67,13 @@ background: linear-gradient(151deg, #3e3d3d 0%,#464646 60%, #525145 90%);
 }
 .time{
     grid-column: 5;
-    grid-row: 1 /2;
-    font-size: clamp(1.8em, 4vw, 3.8em);
-    font-weight: 200;
-    text-align: center;
+    grid-row: 1 /5;
+    display: flex;
+    justify-content: center;
+    /* font-size: clamp(1.8em, 4vw, 3.8em); */
+    /* font-weight: 200;
+    text-align: center; */
+    /* border: 1px solid red; */
 }
 .date{
     /* background-color: black; */
